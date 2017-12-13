@@ -9,7 +9,13 @@
 import UIKit
 
 class RegisterTableVC: UITableViewController {
-
+    
+    @IBOutlet weak var firstName: UITextField!
+    
+    @IBOutlet weak var secondName: UITextField!
+    
+    @IBOutlet weak var thirdName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
