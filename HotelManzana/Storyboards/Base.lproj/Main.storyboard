@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ThC-K9-swZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ThC-K9-swZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -50,7 +50,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hy8-zq-kH8">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hy8-zq-kH8">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -137,7 +137,7 @@
                                                         <!--2017-12-13 13:01:23 +0000-->
                                                     </date>
                                                     <connections>
-                                                        <action selector="datePickerChanged:" destination="K69-l0-0YN" eventType="valueChanged" id="C0j-Zg-dWC"/>
+                                                        <action selector="datePickerChanged:" destination="K69-l0-0YN" eventType="valueChanged" id="qu0-fl-8p6"/>
                                                     </connections>
                                                 </datePicker>
                                             </subviews>
@@ -195,7 +195,7 @@
                                                         <!--2017-12-13 13:20:02 +0000-->
                                                     </date>
                                                     <connections>
-                                                        <action selector="datePickerChanged:" destination="K69-l0-0YN" eventType="valueChanged" id="AlV-pN-6Er"/>
+                                                        <action selector="datePickerChanged:" destination="K69-l0-0YN" eventType="valueChanged" id="2FW-La-qol"/>
                                                     </connections>
                                                 </datePicker>
                                             </subviews>
@@ -215,7 +215,7 @@
                                         <rect key="frame" x="0.0" y="819.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t3Z-Z8-yPx" id="CNk-uw-Fvw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -227,7 +227,7 @@
                                         <rect key="frame" x="0.0" y="919.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gqQ-5q-q64" id="4Fm-e1-pHl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -239,7 +239,7 @@
                                         <rect key="frame" x="0.0" y="1019.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Unm-Gt-ZFL" id="fwA-Qs-flh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -260,15 +260,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="checkInDateLbl" destination="XK7-iy-g4J" id="V8P-gI-gvd"/>
-                        <outlet property="checkInDatePicker" destination="dNb-hd-Z19" id="Z8n-bQ-kCi"/>
+                        <outlet property="checkInDatePicker" destination="dNb-hd-Z19" id="fi4-dv-JnA"/>
                         <outlet property="checkOutDateLbl" destination="4KB-GJ-DBv" id="FQb-d0-Z4e"/>
-                        <outlet property="checkOutDatePicker" destination="hRG-TQ-deH" id="Z0h-1c-g6u"/>
-                        <outlet property="datePickerChanged" destination="dNb-hd-Z19" id="yOO-AA-YXM"/>
+                        <outlet property="checkOutDatePicker" destination="hRG-TQ-deH" id="kJ7-Rz-VGj"/>
                         <outlet property="email" destination="lnv-RJ-1X1" id="Pcg-1X-Yey"/>
                         <outlet property="firstName" destination="rYj-4E-6pt" id="Uue-RS-asE"/>
                         <outlet property="lastName" destination="hy8-zq-kH8" id="it7-Tc-oNg"/>
-                        <outlet property="secondName" destination="hy8-zq-kH8" id="V8G-A8-Gv9"/>
-                        <outlet property="thirdName" destination="lnv-RJ-1X1" id="1qN-ol-X9d"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWQ-XK-fwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
