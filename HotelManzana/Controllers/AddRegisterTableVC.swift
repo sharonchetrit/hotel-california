@@ -90,7 +90,8 @@ class AddRegisterTableVC: UITableViewController, SelectRoomTypeTableViewControll
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         let midnightToday = Calendar.current.startOfDay(for: Date())
-        
+        print("midnight \(midnightToday)")
+        print("checkindatepicker: \(checkInDatePicker)")
         checkInDatePicker.minimumDate = midnightToday
         checkInDatePicker.date = midnightToday
         
