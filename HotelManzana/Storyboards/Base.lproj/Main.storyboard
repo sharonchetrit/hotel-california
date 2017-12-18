@@ -131,7 +131,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dNb-hd-Z19">
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dNb-hd-Z19">
                                                     <rect key="frame" x="0.0" y="-98" width="375" height="388"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="534862883.59239399">
                                                         <!--2017-12-13 13:01:23 +0000-->
@@ -189,7 +189,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hRG-TQ-deH">
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hRG-TQ-deH">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="534864002.31275898">
                                                         <!--2017-12-13 13:20:02 +0000-->
@@ -409,7 +409,7 @@
         <!--Root View Controller-->
         <scene sceneID="18x-07-q76">
             <objects>
-                <tableViewController id="vx5-SM-o6u" customClass="AddRegisterTableVC" customModule="HotelManzana" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="vx5-SM-o6u" customClass="RegistrationController" customModule="HotelManzana" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JGa-B3-OJg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -448,7 +448,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="Mhr-3z-pDh">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Fc4-iF-7SX">
                             <connections>
-                                <segue destination="ThC-K9-swZ" kind="show" id="kmK-cx-eBl"/>
+                                <segue destination="ThC-K9-swZ" kind="show" id="nAH-8r-59S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
