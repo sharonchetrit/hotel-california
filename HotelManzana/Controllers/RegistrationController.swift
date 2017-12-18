@@ -10,7 +10,7 @@ import UIKit
 
 class RegistrationController: UITableViewController {
     
-    var registration: [Registration] = []
+    var registrations: [Registration] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,28 +36,44 @@ class RegistrationController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
     
-    /*
+    
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: “reuseIdentifier”, for: indexPath)
+     let cell = tableView.dequeueReusableCell(withIdentifier: "RegistrationCell", for: indexPath)
+        
+        let registration = registrations[indexPath.row]
+        
+        let dateFormmatter = DateFormatter()
+        dateFormmatter.dateStyle = .short
+        
+        cell.textLabel?.text = registration.firstName + "" + registration.lastName
+        cell.detailTextLabel?.text = dateFormmatter.string(from: registration.checkInDate) + " - " + dateFormmatter.string(from: registration.checkOutDate) + " - " + registration.roomType.name
      
      // Configure the cell...
      
      return cell
      }
-     */
     
-    /*
-     // Override to support conditional editing of the table view.
+    @IBAction func unwindFromAddRegistration(unwindSegue: UIStoryboardSegue) {
+        guard let addRegistrationSegue = unwindSegue.source as? AddRegisterTableVC,
+            let registration = addRegistrationSegue.registration else { return }
+        
+        registrations.append(registration)
+        tableView.reloadData()
+    }
+    
+    
+    
+      /*// Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
      // Return false if you do not want the specified item to be editable.
      return true
      }
-     */
     
-    /*
+    
+    
      // Override to support editing the table view.
      override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
      if editingStyle == .delete {
@@ -66,15 +82,14 @@ class RegistrationController: UITableViewController {
      } else if editingStyle == .insert {
      // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
      }
-     }
-     */
-    
+     }*/
+
     /*
-     // Override to support rearranging the table view.
+      Override to support rearranging the table view.
      override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
      
      }
-     */
+ 
     
     /*
      // Override to support conditional rearranging of the table view.
@@ -92,6 +107,9 @@ class RegistrationController: UITableViewController {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
      }
-     */
-    
+ */
+ */
 }
+
+ 
+ 

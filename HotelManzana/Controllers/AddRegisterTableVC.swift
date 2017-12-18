@@ -44,6 +44,24 @@ class AddRegisterTableVC: UITableViewController, SelectRoomTypeTableViewControll
     @IBOutlet weak var roomTypeLabel: UILabel!
     
     
+    var registration: Registration? {
+        guard let roomType = roomType else {
+            return nil
+        }
+        let firstN = firstName.text ?? ""
+        let lastN = lastName.text ?? ""
+        let mail = email.text ?? ""
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
+        
+        let numberOfAdults = Int(numberOfAdultStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
+        let hasWifi = Switch.isOn
+        
+        return Registration(firstName: firstN, lastName: lastN, emailAddress: mail, checkInDate: checkInDate, checkOutDate: checkOutDate, numberOfAdults: numberOfAdults, numberOfChildren: numberOfChildren, roomType: roomType, wifi: hasWifi)
+    }
+    
+    
     let checkInDatePickerIndexPath = IndexPath(row: 1, section: 1)
     let checkOutDatePickerIndexPath = IndexPath(row: 3, section: 1)
     

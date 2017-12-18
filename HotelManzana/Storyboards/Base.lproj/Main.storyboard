@@ -381,6 +381,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="QI8-Tk-lr2">
                             <connections>
                                 <action selector="DoneBarButtonItem:" destination="K69-l0-0YN" id="zVz-2w-aaH"/>
+                                <segue destination="1VL-Og-jOW" kind="unwind" unwindAction="unwindFromAddRegistrationWithUnwindSegue:" id="O0c-WQ-cOE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -401,19 +402,20 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWQ-XK-fwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1VL-Og-jOW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="600.79999999999995" y="127.28635682158921"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="18x-07-q76">
             <objects>
-                <tableViewController id="vx5-SM-o6u" sceneMemberID="viewController">
+                <tableViewController id="vx5-SM-o6u" customClass="AddRegisterTableVC" customModule="HotelManzana" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JGa-B3-OJg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="TKb-ct-eUw" detailTextLabel="BfX-Fy-ztf" style="IBUITableViewCellStyleSubtitle" id="ypa-aB-05c">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegistrationCell" textLabel="TKb-ct-eUw" detailTextLabel="BfX-Fy-ztf" style="IBUITableViewCellStyleSubtitle" id="ypa-aB-05c">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ypa-aB-05c" id="emX-i0-ACO">
